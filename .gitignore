@@ -1,0 +1,5 @@
+*.DS_Store
+/node_modules/
+/.idea/
+/gemini-report
+/gemini/screens

@@ -1,0 +1,25 @@
+rootUrl: http://ya.ru
+gridUrl: http://127.0.0.1:4444/wd/hub
+windowSize: 320x568
+calibrate: false
+httpTimeout: 5000
+sessionRequestTimeout: 60000
+sessionQuitTimeout: 5000
+
+browsers:
+    chrome:
+        desiredCapabilities:
+            browserName: 'chrome'
+
+system:
+    plugins:
+        babel:
+            presets: [
+                'react',
+                'es2015',
+#                'stage-0',
+            ]
+        react:
+            webpackConfig: './webpack.config.js'
+    exclude:
+        - node_modules/**
